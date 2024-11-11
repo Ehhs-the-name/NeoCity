@@ -23,13 +23,22 @@ body {
     /* display: flex; */
 }
 
+.all-things{
+    position: relative;
+    max-width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
 nav {
     display: flex;
+    position: relative;
+    top: 0;
     flex-flow: column nowrap;
     gap: 1.2 rem;
     max-width: 15%;
-    float: right;
-    z-index: 3;
+    /* float: right; */
+    /* z-index: 3; */
 }
 
 nav div{
@@ -37,6 +46,11 @@ nav div{
     background-color: antiquewhite;
     border: black 2px solid;
 
+}
+
+footer {
+    min-height: 2rem;
+    background-color: black;
 }
 
 /* @media (min-width: 1024px) {} */
