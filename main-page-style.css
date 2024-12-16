@@ -1,3 +1,10 @@
+:root {
+    --headHeight: 15%;
+    --footHeight: 2rem;
+    --mainHeight: 100 - (var(--headHeight) + var(--footHeight));
+    /* --white: #ffffff; */
+  }
+
 html {
     width: 100%;
     height: 100%;
@@ -7,27 +14,45 @@ html {
 body {
     /* remember to choose a nice font */
     background-color: #ffffff;
+    height: 100%;
+    margin: 0;
     /* Colour's are bad, I know! */
 }
+
+div.wrap{ height:100%; overflow:hidden; }
 
 .music-player iframe{
     position: fixed;
     left: 0px;
     bottom: 0;
-    width: 100%;
-    max-height: 30px;
+    width: 100vw;
+    max-height: 25vh;
 
 }
 
 .main-title {
     /* display: flex; */
+    height: var(--headHeight);
 }
 
 .all-things{
+    margin: 3em 0;
+    padding: 0 1.5em; /*might remove*/
     position: relative;
-    max-width: 100%;
+    max-width: 98vw;
+    max-height: var(--mainHeight);
+    min-width: fit-content;
     display: flex;
     flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+
+div.middle-buttons {
+    max-height: min-content;
+}
+
+div.middle-buttons img {
+    max-height: 20%;
 }
 
 nav {
@@ -37,6 +62,8 @@ nav {
     flex-flow: column nowrap;
     gap: 1.2 rem;
     max-width: 15%;
+    max-height: 78vh;
+    justify-content: space-between;
     /* float: right; */
     /* z-index: 3; */
 }
@@ -49,7 +76,9 @@ nav div{
 }
 
 footer {
-    min-height: 2rem;
+    position: relative;
+    bottom: 0;
+    min-height: var(--footHeight);
     background-color: black;
 }
 
