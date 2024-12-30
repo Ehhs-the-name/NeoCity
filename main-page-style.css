@@ -1,7 +1,8 @@
 :root {
     --headHeight: 15%;
     --footHeight: 2rem;
-    --mainHeight: 100 - (var(--headHeight) + var(--footHeight));
+    --mainHeight: 68vh;
+    --maxContentHeight: 78vh;
     /* --white: #ffffff; */
   }
 
@@ -31,14 +32,19 @@ div.wrap{ height:100%; overflow:hidden; }
 }
 
 .main-title {
-    /* display: flex; */
+    position: fixed;
+    top: 0;
+    padding: 0 3rem 1.5rem 3rem;
     height: var(--headHeight);
+    background-color: bisque;
+    /* z-index: 3; */
 }
 
 .all-things{
     margin: 3em 0;
-    padding: 0 1.5em; /*might remove*/
+    /* padding: 0 1.5em; might remove */
     position: relative;
+    top: 0;
     max-width: 98vw;
     max-height: var(--mainHeight);
     min-width: fit-content;
@@ -47,12 +53,24 @@ div.wrap{ height:100%; overflow:hidden; }
     justify-content: space-evenly;
 }
 
-div.middle-buttons {
-    max-height: min-content;
+.svg-move{
+    background-color: blue;
 }
 
-div.middle-buttons img {
-    max-height: 20%;
+div.middle-buttons {
+    max-height: var(--maxContentHeight);
+    background-color: red;
+}
+
+
+
+.middle-buttons img {
+    width: 100%;
+    height: 100%;
+}
+
+.middle-buttons div{
+    object-fit: contain;
 }
 
 nav {
@@ -61,11 +79,12 @@ nav {
     top: 0;
     flex-flow: column nowrap;
     gap: 1.2 rem;
-    max-width: 15%;
-    max-height: 78vh;
+    max-width: 50%;
+    max-height: var(--maxContentHeight);
     justify-content: space-between;
     /* float: right; */
     /* z-index: 3; */
+    background-color: #82c89b;
 }
 
 nav div{
