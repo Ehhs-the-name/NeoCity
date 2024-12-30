@@ -24,8 +24,8 @@ div.wrap{
     height:100%; 
     overflow:hidden; 
     background-color: burlywood;
-    /* display: flexbox;
-    flex-direction: column; */
+    /* temporary! */
+    display: none;
 }
 
 /* .music-player iframe{
