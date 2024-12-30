@@ -2,9 +2,32 @@
     --
 } */
 
+@keyframes one {
+    0% { opacity: 100; letter-spacing: auto; }
+    12% { opacity: 0; letter-spacing: 5rem; }
+    100% { display: none; opacity: 0; }
+}
+
+@keyframes two {
+    0% { opacity: 0; letter-spacing: 0.1rem; }
+    11% { opacity: 0; letter-spacing: 0.1rem; }
+    12% { opacity: 100; letter-spacing: auto; }
+    22% { opacity: 0; letter-spacing: 5rem; }
+    100% { display: none; opacity: 0; }
+}
+
+@keyframes three {
+    0% { opacity: 0; letter-spacing: 0.1rem; }
+    11% { opacity: 0; letter-spacing: 0.1rem; }
+    12% { opacity: 100; letter-spacing: auto; }
+    22% { opacity: 0; letter-spacing: 5rem; }
+    100% { display: none; opacity: 0; }
+}
+
 @keyframes sevenEnd {
-    0% { letter-spacing: auto; }
-    90% {opacity: 100;}
+    0% { letter-spacing: auto; opacity:0}
+    58% {letter-spacing: auto; opacity: 0;}
+    60% {letter-spacing: auto; opacity: 100;}
     100% { letter-spacing: 3rem; opacity: 0;}
 
 
@@ -17,7 +40,7 @@
 
 
     /*Idea for timing this right, make them all the same second length then have the keyframes end with (opacity:0) when the welcome is over!*/
-  }
+}
 
 
 
@@ -34,7 +57,29 @@
 
 
 #one{
-    
+    position: fixed;
+    top: 20rem;
+    left: 2rem;
+    transform: rotate(20deg);
+    animation: one 4.4s;
+    background-color: rgb(224, 168, 168);
+}
+
+#two {
+    position: fixed;
+    top: 20rem;
+    right: 10rem;
+    transform: rotate(-10deg);
+    animation: two 4.4s;
+    background-color: rgb(227, 132, 132);
+}
+
+#three {
+    position: fixed;
+    top: 50rem;
+    left: 10rem;
+    /* animation: three 4.4s; */
+    background-color: rgb(218, 92, 92);
 }
 
 #seven {
@@ -43,7 +88,5 @@
     top: 20px;
     left: 20px;
     width: 95vw;
-    animation-name: sevenEnd;
-    animation-duration: 4s;
-    /* display: none; */
+    animation: sevenEnd 4.4s;
 }
