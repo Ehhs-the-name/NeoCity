@@ -20,7 +20,13 @@ body {
     /* Colour's are bad, I know! */
 }
 
-div.wrap{ height:100%; overflow:hidden; }
+div.wrap{ 
+    height:100%; 
+    overflow:hidden; 
+    background-color: burlywood;
+    /* display: flexbox;
+    flex-direction: column; */
+}
 
 /* .music-player iframe{
     position: fixed;
@@ -32,43 +38,47 @@ div.wrap{ height:100%; overflow:hidden; }
 } */
 
 .main-title {
-    position: fixed;
+    position: absolute;
     top: 0;
     padding: 0 3rem 1.5rem 3rem;
     height: var(--headHeight);
+    width: 75vw;
     background-color: bisque;
     /* z-index: 3; */
 }
 
-/* .all-things{
-    margin: 3em 0;
-    padding: 0 1.5em;
+.all-things{
+    /* margin: 3em 0; */
+    /* padding: 0 3rem; */
     position: relative;
-    top: 0;
-    max-width: 98vw;
-    max-height: var(--mainHeight);
+    top: 17%;
+    max-width: 80vw;
+    height: var(--maxContentHeight);
     min-width: fit-content;
+    /* contain: content; */
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-evenly;
     background-color: rgb(122, 181, 233);
-} */
+}
 
 .svg-move{
     background-color: blue;
     width: 600px;
     height: auto;
-    position: fixed;
+    /* position: fixed; */
     display: block;
-    top: 10.1rem;
+    /* top: 10.1rem; */
 }
 
 div.middle-buttons {
     max-height: var(--maxContentHeight);
     background-color: red;
-    position: fixed;
-    top: 0;
-    left: 50%;
+    width: 300px;
+    /* position: fixed; */
+    /* top: 0; */
+    /* left: 50%; */
+
 }
 
 
@@ -79,7 +89,6 @@ div.middle-buttons {
 }
 
 .middle-buttons div{
-    width: 300px;
     object-fit: contain;
 }
 
@@ -91,8 +100,8 @@ nav {
     height: 100vh;
     flex-flow: column nowrap;
     gap: 1.2 rem;
-    max-width: 50%;
-    max-height: var(--maxContentHeight);
+    width: 20vw;
+    max-height: 95vh;
     justify-content: space-between;
     /* float: right; */
     /* z-index: 3; */
@@ -105,6 +114,9 @@ nav div{
     border: black 2px solid;
 
 }
+
+
+/*FOOTER IS GOOD, DO NOT TOUCH!*/
 
 footer {
     position: fixed;
