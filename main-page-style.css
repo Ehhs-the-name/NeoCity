@@ -1,7 +1,7 @@
 :root {
-    --headHeight: 15%;
-    --footHeight: 2rem;
-    --mainHeight: 68vh;
+    --headHeight: 15vh;
+    --footHeight: 5vh;
+    --mainHeight: 95vh;
     --maxContentHeight: 78vh;
     /* --white: #ffffff; */
   }
@@ -22,14 +22,14 @@ body {
 
 div.wrap{ height:100%; overflow:hidden; }
 
-.music-player iframe{
+/* .music-player iframe{
     position: fixed;
     left: 0px;
     bottom: 0;
     width: 100vw;
     max-height: 25vh;
 
-}
+} */
 
 .main-title {
     position: fixed;
@@ -40,9 +40,9 @@ div.wrap{ height:100%; overflow:hidden; }
     /* z-index: 3; */
 }
 
-.all-things{
+/* .all-things{
     margin: 3em 0;
-    /* padding: 0 1.5em; might remove */
+    padding: 0 1.5em;
     position: relative;
     top: 0;
     max-width: 98vw;
@@ -51,15 +51,24 @@ div.wrap{ height:100%; overflow:hidden; }
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-evenly;
-}
+    background-color: rgb(122, 181, 233);
+} */
 
 .svg-move{
     background-color: blue;
+    width: 600px;
+    height: auto;
+    position: fixed;
+    display: block;
+    top: 10.1rem;
 }
 
 div.middle-buttons {
     max-height: var(--maxContentHeight);
     background-color: red;
+    position: fixed;
+    top: 0;
+    left: 50%;
 }
 
 
@@ -70,13 +79,16 @@ div.middle-buttons {
 }
 
 .middle-buttons div{
+    width: 300px;
     object-fit: contain;
 }
 
 nav {
     display: flex;
-    position: relative;
+    position: fixed;
     top: 0;
+    right: 0;
+    height: 100vh;
     flex-flow: column nowrap;
     gap: 1.2 rem;
     max-width: 50%;
@@ -95,9 +107,10 @@ nav div{
 }
 
 footer {
-    position: relative;
+    position: fixed;
     bottom: 0;
     min-height: var(--footHeight);
+    width: 100vw;
     background-color: black;
 }
 
