@@ -110,6 +110,11 @@ h1 {
     background-color: blue;
 }
 
+.svg-move img {
+    max-width: 600px;
+    height: auto;
+}
+
 .middle-buttons {
     max-height: var(--maxContentHeight);
     background-color: red;
