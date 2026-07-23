@@ -8,10 +8,13 @@
     <!-- flaticon -->
     <link rel="icon" href="flav.png">
     <link href="main-page-style.css" rel="stylesheet" type="text/css" />
+    <!-- Avatar Preloads -->
+    <link rel="preload" href="https://i.postimg.cc/CxCH4SZn/Webbed-Site2.png" as="image">
+    <link rel="preload" href="https://i.postimg.cc/Bn5cC48L/Webbed-Site.png" as="image">
     <script src="mp-script.js"></script>
 </head>
 
-<body>
+<body id="fullBody" onmousemove="changeSVG(event)">
     <!-- <p>Hello World :)</p> -->
     <!-- here's the stuff from replit -->
 
@@ -54,7 +57,7 @@
             <!-- side pannel pointer, javascript with change url  -->
             <div class="svg-move">
                 <!--<img src="https://placehold.co/600X400">-->
-                <img id="svg" src="https://i.postimg.cc/Bn5cC48L/Webbed-Site.png" alt="Web avatar point low">
+                <img id="fakeSVG" src="https://i.postimg.cc/Bn5cC48L/Webbed-Site.png" alt="Web avatar point low">
                 <!--<img src="https://i.postimg.cc/CxCH4SZn/Webbed-Site2.png" alt="Web avatar point high">-->
             </div>
 
@@ -105,7 +108,6 @@
             <p>(c) Ehh's The Name 2024</p>
         </footer>
 
-    <!--<script src="words-script.js"></script>  Commented out for now-->
 </body>
 
 </html>
