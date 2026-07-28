@@ -1,10 +1,48 @@
 :root {
+    /*Window Sizing*/
     --headHeight: 15vh;
     --footHeight: 5vh;
     --mainHeight: 95vh;
     --maxContentHeight: 78vh;
-    /* --white: #ffffff; */
+
+    /*Site Colours/Theme*/
+    --bgColour: #240d32;
+    --bgColourLight: #321d57;
+    --bgColourP: #563471;
+    --bgColourY: #949933;
+    --bgColourO: #996b33;
+    --wwhite: #fcfbee;
+    --ColourY: #c0c653;
+    --ColourO: #c69253;
+    --ColourP: #9253c6;
   }
+
+@font-face {
+    font-family: TinyCRT;
+    src: url('fonts/tiny5.crt-regular.otf');
+    src: url('fonts/tiny5.crt-bold.otf');
+}
+
+@font-face {
+    font-family: TinyLCD;
+    src: url('fonts/tiny5.lcd-regular.otf');
+    src: url('fonts/tiny5.lcd-bold.otf');
+}
+
+
+@font-face {
+    font-family: MatrixType;
+    src: url('fonts/matrixtype.regular.otf');
+    src: url('fonts/matrixtype.bold.otf');
+}
+
+@font-face {
+    font-family: OpenDyslexic;
+    src: url('fonts/OpenDyslexic-Regular.otf');
+    src: url('fonts/OpenDyslexic-Italic.otf');
+    src: url('fonts/OpenDyslexic-Bold.otf');
+    src: url('fonts/OpenDyslexic-BoldItalic.otf');
+}
 
 html {
     width: 100%;
@@ -13,18 +51,17 @@ html {
 }
 
 body {
-    /* remember to choose a nice font */
-    background-color: #ffffff;
+    font-family: MatrixType;
+    background-image: url('img/star.gif');
+    background-repeat: repeat-x repeat-y;
     height: 100%;
     margin: 0;
-    /* Colour's are bad, I know! */
+    color: var(--wwhite);
 }
 
 div.wrap{ 
     height:100%; 
     overflow:hidden; 
-    background-color: burlywood;
-    /* temporary! */
     display: none;
 }
 
@@ -47,12 +84,12 @@ div.wrap{
     justify-content: space-evenly;
     align-content: center;
     text-align: center;
-    background-color: bisque;
     /* z-index: 3; */
     
 }
 
 #fun-head-text {
+    font-family: TinyLCD; 
     max-width: 300px;
     padding: 0;
     margin: 0;
@@ -60,7 +97,8 @@ div.wrap{
 }
 
 h1 {
-    font-size: 3.5rem;
+    font-size: 4rem;
+    font-family: TinyCRT;
 }
 
 .wel-wrap{
@@ -113,7 +151,6 @@ h1 {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-evenly;
-    background-color: rgb(122, 181, 233);
 }
 
 .svg-move{
@@ -122,7 +159,6 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: blue;
 }
 
 .svg-move img {
@@ -131,7 +167,6 @@ h1 {
 
 .middle-buttons {
     max-height: var(--maxContentHeight);
-    background-color: red;
     width: 300px;
     display: flex;
     flex-direction: column;
@@ -151,7 +186,6 @@ h1 {
 
 .boxer h2 {
     position: absolute;
-    /* background-color: azure; */
     /*might adjust these two*/
     top: 39%;
     left: 20%;
@@ -168,13 +202,11 @@ nav {
     max-height: 85vh;
     justify-content: space-between;
     padding: 5vh 0 ;
-    background-color: #82c89b;
 }
 
 nav div{
     padding:  3rem 1.5rem;
     text-align: center;
-    background-color: antiquewhite;
     border: black 2px solid;
     border-radius: 2rem;
     margin: 0.5rem;
@@ -186,8 +218,6 @@ footer {
     bottom: 0;
     min-height: var(--footHeight);
     width: 100vw;
-    background-color: black;
-    color: white;
 }
 
 /*for smaller 'puter*/
