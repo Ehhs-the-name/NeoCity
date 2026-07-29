@@ -45,12 +45,19 @@
     src: url('fonts/OpenDyslexic-BoldItalic.otf');
 }
 
-/* JAVA NONSENSE */
+/* JAVA/ANIMATION NONSENSE */
 
-/*.fonter {
-    font-family: OpenDyslexic;
-}*/
+@property --myColor1 {
+    syntax: '<color>';
+    initial-value: #563471;
+    inherits: false;
+}
 
+@property --myColor2 {
+    syntax: '<color>';
+    initial-value: #240d32;
+    inherits: false;
+}
 
 /* MAIN CONTAINERS */
 
@@ -201,7 +208,12 @@ h1 {
 
 .boxer{
     position: relative;
-    
+    width: 300px;
+    aspect-ratio: 1/1;
+    border: var(--wwhite) 2px solid;
+    border-radius: 0.25rem;
+    background: linear-gradient(150deg, var(--myColor1), var(--myColor2));
+    transition: --myColor1 1s, --myColor2 1s; 
 }
 
 .boxer h2 {
@@ -210,6 +222,13 @@ h1 {
     top: 39%;
     left: 20%;
 }
+
+.boxer:hover {
+    --myColor1: #240d32;
+    --myColor2: #9253c6;
+}
+
+
 
 nav {
     display: flex;
