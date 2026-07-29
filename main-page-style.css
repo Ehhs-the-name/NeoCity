@@ -104,11 +104,12 @@ div.wrap{
 }
 
 #fun-head-text {
-    font-family: TinyLCD; 
+    font-family: TinyLCD;
     max-width: 300px;
     padding: 0;
     margin: 0;
     align-self: center;
+    flex-shrink: 1;
 }
 
 h1 {
@@ -237,6 +238,25 @@ footer {
     bottom: 0;
     min-height: var(--footHeight);
     width: 100vw;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    contain: paint;
+}
+#CR {
+    margin-left: 10px;
+}
+
+#dyslexic {
+    margin-right: 10px; 
+    padding: 5px 10px;
+    color: var(--ColourO);
+    background-color: var(--bgColourLight);
+    text-align: center;
+    font-size: 0.75rem;
+    font-family: OpenDyslexic;
+    border: solid 2px var(--bgColourP);
+    border-radius: 5px;
 }
 
 /*for smaller 'puter*/
