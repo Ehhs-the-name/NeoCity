@@ -219,10 +219,6 @@ h1 {
 }
 
 .boxer p {
-    /*position: absolute;*/
-    /*might adjust these two*/
-    /*top: 39%;*/
-    /*left: 20%;*/
     font-size: 1.5rem;
     margin: auto;
     padding: 0;
@@ -296,14 +292,22 @@ footer {
 #dyslexic {
     margin-right: 10px; 
     padding: 5px 10px;
-    color: var(--ColourO);
-    background-color: var(--bgColourLight);
+    color: var(--ColourP);
+    background-color: var(--myColour2);
     text-align: center;
     font-size: 0.75rem;
     font-family: OpenDyslexic;
-    border: solid 2px var(--bgColourP);
-    border-radius: 5px;
+    border: inset 2px var(--bgColourLight);
+    border-radius: 0.25rem;
+    transition: background-color 0.25s, color 0.25s; 
 }
+
+#dyslexic:hover {
+    color: var(--ColourO);
+    background-color: var(--bgColourLight); 
+}
+
+
 
 /*for smaller 'puter*/
 /* @media (min-width: 1024px) {} */
