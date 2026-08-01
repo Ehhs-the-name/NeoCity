@@ -255,13 +255,13 @@ nav > div {
 }
 
 nav > div:hover {
-    /*background-color: var(--bgColourLight);*/
+    background-color: var(--bgColour);
     border-color: var(--ColourY);
     color: var(--ColourP);
 }
 
 nav > div:hover:nth-child(2n) {
-    /*background-color: var(--bgColourP);*/
+    background-color: var(--bgColour);
     border-color: var(--ColourO);
     color: var(--ColourP);
 }
@@ -297,7 +297,7 @@ footer {
 #dyslexic {
     position: absolute;
     right: 0;
-    padding: 1vh 10px;
+    padding: 2vh 10px;
     color: var(--ColourP);
     background-color: var(--bgColour);
     text-align: center;
