@@ -277,7 +277,7 @@ nav > div:hover:nth-child(2n) {
 footer {
     position: fixed;
     bottom: 0;
-    min-height: var(--footHeight);
+    max-height: var(--footHeight);
     width: 100vw;
     display: inline-flex;
     justify-content: space-between;
@@ -285,21 +285,28 @@ footer {
     contain: paint;
 }
 #CR {
-    margin-left: 10px;
-    opacity: 0.8;
+    background-color: var(--bgColour);
+    min-width: 275px;
+    height: var(--footHeight);
+    text-align: center;
+    padding-top: 25px; 
+    margin: 0;
+    z-index: 1;
 }
 
 #dyslexic {
-    margin-right: 10px; 
-    padding: 5px 10px;
+    position: absolute;
+    right: 0;
+    padding: 1vh 10px;
     color: var(--ColourP);
-    background-color: var(--myColour2);
+    background-color: var(--bgColour);
     text-align: center;
     font-size: 0.75rem;
     font-family: OpenDyslexic;
     border: inset 2px var(--bgColourLight);
     border-radius: 0.25rem;
-    transition: background-color 0.25s, color 0.25s; 
+    transition: background-color 0.25s, color 0.25s;
+    z-index: 2;
 }
 
 #dyslexic:hover {
@@ -307,7 +314,38 @@ footer {
     background-color: var(--bgColourLight); 
 }
 
+#stamps {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 60%;
+    position relative;
+    animation: scroll 60s linear infinite;
+}
 
+#stamps img {
+    margin: auto 25px;
+    width: auto;
+}
+
+.longStamp {
+    height: 20px;
+}
+
+
+.normalStamp{
+    height: 45px;
+}
+
+
+@keyframes scroll {
+    0% {
+        transform: translateX(150%);
+    }
+    100% {
+        transform: translateX(-150%);
+    }
+}
 
 /*for smaller 'puter*/
 /* @media (min-width: 1024px) {} */
