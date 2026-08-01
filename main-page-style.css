@@ -323,7 +323,7 @@ footer {
     animation: scroll 60s linear infinite;
 }
 
-#stamps img {
+#stamps a {
     margin: auto 25px;
     width: auto;
 }
