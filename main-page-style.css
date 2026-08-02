@@ -246,7 +246,7 @@ nav {
 }
 
 nav > div {
-    padding:  3rem 1.5rem;
+    padding: 3rem 0;
     text-align: center;
     border-bottom: var(--bgColourP) 5px solid;
     border-radius: 0.5rem;
@@ -257,19 +257,23 @@ nav > div {
 nav > div:hover {
     background-color: var(--bgColour);
     border-color: var(--ColourY);
-    color: var(--ColourP);
 }
 
 nav > div:hover:nth-child(2n) {
     background-color: var(--bgColour);
     border-color: var(--ColourO);
-    color: var(--ColourP);
 }
 
 
+nav > div > a {
+    padding: 3rem 6.5rem;
+    color: var(--wwhite);
+    text-decoration: none;
+}
 
-
-
+nav > div > a:hover {
+    color: var(--ColourP);
+}
 
 
 
