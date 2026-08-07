@@ -88,12 +88,15 @@ footer {
 }
 
 #homebtn {
-    transition: opacity 0.25s;
+    width: 48px;
+    aspect-ratio: 1/1; 
+    background: url("../img/home-icon/homeE1.png") no-repeat;
+    transition: background 0.25s;
 }
 
 
 #homebtn:hover {
-    opacity: 0.8;
+    background: url("../img/home-icon/homeE2.png") no-repeat;
 }
 
 #dyslexic {
