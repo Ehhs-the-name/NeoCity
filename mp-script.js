@@ -24,7 +24,7 @@ function fontChange(){
             eleList[i].style.fontSize = '1rem';
         } else {
             eleList[i].style.fontFamily = 'OpenDyslexic';
-            eleList[i].style.fontSize = '0.75rem';
+            //eleList[i].style.fontSize = '0.75rem';
         }
     }
 }

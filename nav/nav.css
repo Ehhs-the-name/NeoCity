@@ -1,0 +1,130 @@
+/* VARS */
+:root {
+    /*Site Colours/Theme*/
+    --bgColour: #240d32;
+    --bgColourLight: #321d57;
+    --bgColourP: #563471;
+    --bgColourY: #949933;
+    --bgColourO: #996b33;
+    --wwhite: #fcfbee;
+    --bblack: 110419;
+    --ColourY: #c0c653;
+    --ColourO: #c69253;
+    --ColourP: #9253c6;
+  }
+
+@font-face {
+    font-family: TinyCRT;
+    src: url('../fonts/tiny5.crt-regular.otf');
+    src: url('../fonts/tiny5.crt-bold.otf');
+}
+
+@font-face {
+    font-family: TinyLCD;
+    src: url('../fonts/tiny5.lcd-regular.otf');
+    src: url('../fonts/tiny5.lcd-bold.otf');
+}
+
+
+@font-face {
+    font-family: MatrixType;
+    src: url('../fonts/matrixtype.regular.otf');
+    src: url('../fonts/matrixtype.bold.otf');
+}
+
+@font-face {
+    font-family: OpenDyslexic;
+    src: url('../fonts/OpenDyslexic-Regular.otf');
+    src: url('../fonts/OpenDyslexic-Italic.otf');
+    src: url('../fonts/OpenDyslexic-Bold.otf');
+    src: url('../fonts/OpenDyslexic-BoldItalic.otf');
+}
+
+/* JAVA/ANIMATION NONSENSE - IF APPLICABLE */
+
+
+/* MAIN TAG STYLING - MOSTLY FROM MAIN-PAGEs */
+
+
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: MatrixType;
+    background-image: url('../img/star.gif');
+    background-repeat: repeat-x repeat-y;
+    height: 100%;
+    margin: 0;
+    color: var(--wwhite);
+
+}
+
+main {
+    height: 100vh;
+    margin: 2rem 15%;
+    padding: 2rem;
+    background: var(--bgColour);
+    border: 3px solid var(--bgColourLight);
+    border-radius: 0.5rem;
+}
+
+
+footer {
+    width: 99vw;
+    height: 5vh;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    contain: paint;
+}
+
+#CR {
+    min-width: 275px;
+    text-align: center;
+    margin: 0;
+}
+
+#homebtn {
+    transition: opacity 0.25s;
+}
+
+
+#homebtn:hover {
+    opacity: 0.8;
+}
+
+#dyslexic {
+    padding: 5px 15px;
+    margin-right: 20px;
+    color: var(--ColourP);
+    background-color: var(--bgColour);
+    text-align: center;
+    font-size: 0.75rem;
+    font-family: OpenDyslexic;
+    border: inset 2px var(--bgColourLight);
+    border-radius: 0.25rem;
+    transition: background-color 0.25s, color 0.25s;
+}
+
+#dyslexic:hover {
+    color: var(--ColourO);
+    background-color: var(--bgColourLight); 
+}
+
+
+/* MAIN CONTENT CONTAINERS */
+
+
+
+/*for smaller 'puter*/
+/* @media (min-width: 1024px) {} */
+
+
+/*for tablets 'puter*/
+/* @media (min-width: 768px) {} */
+
+/*for phones 'puter*/
+/* @media (min-width: 425px) {} */
